@@ -13,18 +13,15 @@ export default function Home() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end end"]
+    offset: ["start start", "end end"],
   });
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.5, 0]);
   return (
     <>
       <main ref={containerRef} className=" min-h-screen min-w-full">
         {/* Hero Section with Parallax Background */}
-        <div className="relative h-screen overflow-hidden">
-          <motion.div
-            style={{ opacity }}
-            className="fixed inset-0 z-0"
-          >
+        <div className="relative h-auto overflow-hidden">
+          <motion.div style={{ opacity }} className="">
             <div className="w-full h-full bg-gradient-to-b from-purple-900 to-blue-900" />
           </motion.div>
 
@@ -55,9 +52,9 @@ export default function Home() {
         <ParallaxSection
           direction="left"
           speed={0.7}
-          className="h-screen bg-white"
+          className="h-fit bg-white"
         >
-          <ServiceIndex btnName='View' goTo='/service' />
+          <ServiceIndex btnName="View" goTo="/service" />
         </ParallaxSection>
 
         {/* Additional Sections */}
@@ -67,31 +64,17 @@ export default function Home() {
         {/* </ParallaxSection> */}
 
         {/* Basic up/down parallax */}
-        <ParallaxSection
-          direction="up"
-          speed={0.7}
-          className="h-screen"
-        >
+        <ParallaxSection direction="up" speed={0.7} className="h-fit">
           <Introduction />
         </ParallaxSection>
-        <ParallaxSection
-          direction="up"
-          speed={0.7}
-          className="h-screen bg-white"
-        >
+        <ParallaxSection direction="up" speed={0.7} className="h-fit bg-white">
           <Objective />
         </ParallaxSection>
         {/* Fade in with scale */}
 
-        <ParallaxSection
-          direction="left"
-          fadeIn
-          scale
-          className="h-screen "
-        >
+        <ParallaxSection direction="left" fadeIn scale className="h-fit ">
           <TeamMember />
         </ParallaxSection>
-
 
         {/* Mouse parallax with rotation
         <ParallaxSection
@@ -101,9 +84,7 @@ export default function Home() {
         >
           <div className="bg-purple-500 p-10">Interactive Content</div>
         </ParallaxSection> */}
-
-      </main >
-
+      </main>
     </>
   );
 }
