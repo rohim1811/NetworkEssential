@@ -7,17 +7,17 @@ import { Footer } from "../footer";
 export const TeamMember = () => {
   const members = [
     {
-      img: "/team-1.jpg",
+      img: "/kwnhaikal.jpeg",
       name: "Abdul Rohim Fitri",
       role: "Team Leader",
     },
     {
-      img: "/team-2.jpg",
+      img: "/sv.jpeg",
       name: "Pn. Afsal",
       role: "Supervisor",
     },
     {
-      img: "/team-3.jpg",
+      img: "/haikal.jpeg",
       name: "Muhammad Haikal",
       role: "Team Member 1",
     },
@@ -38,13 +38,13 @@ export const TeamMember = () => {
                 {members.map((member, index) => (
                   <>
                     <motion.div whileHover={{ scale: 1.1 }} key={index}>
-                      <Card className="w-[350px] h-[160px]" key={index}>
+                      <Card className="w-[350px] h-[260px]" key={index}>
                         <CardHeader className="justify-center  items-center">
                           <Image
                             src={member.img}
                             alt=""
-                            width={50}
-                            height={50}
+                            width={100}
+                            height={100}
                           />
                         </CardHeader>
                         <CardContent className="justify-center items-center mb-2">
