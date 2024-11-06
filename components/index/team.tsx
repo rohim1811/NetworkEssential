@@ -7,17 +7,17 @@ import { Footer } from "../footer"
 export const TeamMember = () => {
     const members = [
         {
-            img: "/team-1.jpg",
+            img: "/rohim.jpeg",
             name: "Abdul Rohim Fitri",
             role: "Team Leader"
         },
         {
-            img: "/team-2.jpg",
+            img: "/SV.jpeg",
             name: "Pn. Afsal",
             role: "Supervisor"
         },
         {
-            img: "/team-3.jpg",
+            img: "/haikal.jpeg",
             name: "Muhammad Haikal",
             role: "Team Member 1"
         }
