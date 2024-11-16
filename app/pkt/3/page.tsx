@@ -14,12 +14,12 @@ export default function Pkt3() {
     {
       title: "HSRP",
       detail:
-        "OSPF, or Open Shortest Path First, is a link-state routing protocol used to find the best path for data through a network. It’s designed for IP networks and is commonly used in large enterprise networks due to its scalability and efficiency.",
+        "Hot Standby Router Protocol (HSRP) is a network protocol used to ensure high availability for IP networks. Developed by Cisco, HSRP allows multiple routers to work together to present the appearance of a single virtual router to the clients on a network (LAN). This redundancy helps prevent network outages in case one of the routers fails.",
     },
     {
       title: "DHCP",
       detail:
-        "Hot Standby Router Protocol (HSRP) is a network protocol used to ensure high availability for IP networks. Developed by Cisco, HSRP allows multiple routers to work together to present the appearance of a single virtual router to the clients on a network (LAN). This redundancy helps prevent network outages in case one of the routers fails.",
+        "Dynamic Host Configuration Protocol (DHCP) is a network management protocol used to automatically assign IP addresses.",
     },
     {
       title: "ACL",
@@ -96,7 +96,7 @@ export default function Pkt3() {
           className="text-center mb-8"
         >
           <h1 className="text-3xl font-bold mb-4">
-            BASIC SECURITY MODULE FOR NETWORK INSTALLATION
+            Network Essential: Installation and Simulation Complete Guide
           </h1>
           <h2 className="text-xl mb-4 text-white">
             Download your topology for PKT-4
